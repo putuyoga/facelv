@@ -1,7 +1,9 @@
 # facelv
 Face voter based on MERN stack. My experiment on work hours.
 
-# Tools & Framework
+![Imgur](http://i.imgur.com/veQMRDO.jpg)
+
+## Tools & Framework
 1. MongoDB: mongoose
 2. ExpressJS
 3. React: react-dom, react-router
@@ -10,7 +12,7 @@ Face voter based on MERN stack. My experiment on work hours.
 6. Babel
 7. Webpack
 
-# Run
+## Run
 1. Do `npm install`
 2. Make sure MongoDB running with `mongod`
 3. Bundle that javascript using `webpack -d --watch`

@@ -30,6 +30,10 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use('/api', faces);
 
+app.all('/*', function(req, res) {
+  res.sendFile('client/index.html', {'root': './'});
+});
+
 // start server
 app.listen(serverConfig.port);
 console.log('Start at: ' + serverConfig.port);

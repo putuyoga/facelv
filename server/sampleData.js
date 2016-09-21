@@ -8,26 +8,44 @@ export default function () {
 
     var faces = [
         new Face({
-            name: 'Raisa Andriana', 
-            image: 'https://hello-pet.com/assets/uploads/2016/03/raisa-2.jpg'
+            name: 'Chelsea Islan', 
+            image: 'http://i.imgur.com/u9nr2Tl.jpg'
         }),
         new Face({
             name: 'Joanna Alexandra', 
-            image: 'https://hello-pet.com/assets/uploads/2016/03/raisa-2.jpg'
+            image: 'http://i.imgur.com/knyBfZQ.jpg'
         }),
         new Face({
-            name: 'Franda', 
-            image: 'http://3.bp.blogspot.com/-lPi7FgAWQ7Y/Vg7o7o4Tt6I/AAAAAAAABow/lBRz-Xf2WMg/s1600/Franda.jpg'
+            name: 'Efranda Stefanus', 
+            image: 'http://i.imgur.com/DlvavNF.jpg'
+        }),
+        new Face({
+            name: 'Isyana Sarasvati', 
+            image: 'http://i.imgur.com/DODjrlf.jpg'
         }),
         new Face({
             name: 'Pamela Bowie', 
-            image: 'http://www.sisidunia.com/wp-content/uploads/2016/07/profil-pamela-bowie-pemeran-kesya-di-ggs-returns-6.jpeg'
+            image: 'http://i.imgur.com/WQ9gnvN.jpg'
+        }),
+        new Face({
+            name: 'Pevita Pearce', 
+            image: 'http://i.imgur.com/1rlDBtV.jpg'
+        }),
+        new Face({
+            name: 'Raisa Andriana', 
+            image: 'http://i.imgur.com/3s6QvAm.jpg'
+        }),
+        new Face({
+            name: 'Raline Shah', 
+            image: 'http://i.imgur.com/S4PkiYe.jpg'
         })
+
+        
     ];
 
     Face.create(faces, (error) => {
       if (!error) {
-        console.log('ready to go....');
+        console.log('sample data just created.');
       }
     });
   });

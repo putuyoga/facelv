@@ -1,3 +1,4 @@
 node_modules/
 client/public/*.js
+client/public/*.map
 client/public/*.css

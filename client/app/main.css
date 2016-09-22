@@ -1,0 +1,109 @@
+#content {
+    height: 100%;
+}
+.page-header {
+    font-family: 'Playfair Display', serif;
+    border: 0;
+}
+@media (min-width: 768px) {
+    .navbar .navbar-nav {
+        display: inline-block;
+        float: none;
+        vertical-align: top;
+    }
+    .navbar .navbar-collapse {
+        text-align: center;
+    }
+}
+
+.navbar li a {
+    font-weight: bold;
+    color: #222;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    background: #bdc3c7;
+    display: block;
+    margin: 0;
+    height: 100%;
+}
+html {
+    height: 100%;
+}
+
+.container {
+    background: #fff;
+    max-width: 860px;
+    margin: 0 auto;
+    position: relative;
+    height: 100%;
+    overflow: auto;
+}
+
+.faceboxItem {
+    width: 100%;
+    height: 160px;
+    margin-top: 1.2em;
+    margin-bottom: 1.2em;
+    cursor: pointer;
+    border-radius: 2em;
+}
+
+.faceboxItem .faceboxItemContent {
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    color: white;
+    padding: 4px;
+    border-radius: 2em;
+}
+
+.faceboxItemContent button {
+    color: white;
+    border: 4px solid rgba(255,255,255,0.5);
+    border-radius: 60px;
+    background: transparent;
+    margin: 0.5em;
+    padding: 0 1.2em;
+}
+
+.likeButton:hover {
+    background: #16a085;
+    color: white;
+    cursor: pointer;
+}
+
+.dislikeButton:hover {
+    background: #c0392b;
+    color: white;
+    cursor: pointer;
+}
+.the-thing {
+    font-size: 4em;
+    
+}
+
+.thing-enter {
+    opacity: 0.01;
+    transition: opacity 0.3s ease-in;
+    
+}
+
+.thing-enter.thing-enter-active {
+    opacity: 1;
+}
+
+.thing-leave {
+    opacity: 1;
+    transition: opacity 0.3s ease-in;
+}
+
+.thing-leave.thing-leave-active {
+    opacity: 0.01;
+}
+
+table {
+    text-align: left
+}

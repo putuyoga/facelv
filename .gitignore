@@ -1,4 +1,5 @@
 node_modules/
 client/public/*.js
-client/public/*.map
+client/public/*.js.map
 client/public/*.css
+npm-debug.log.*

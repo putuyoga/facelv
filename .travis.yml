@@ -3,12 +3,10 @@ node_js:
   - '5'
 before_script:
   - sleep 15
-before_deploy:
-- echo "Adding refs/heads/master for Azure deployment to work"
-- git checkout --no-track -b master || true
-- git show-ref
+
 deploy:
   provider: azure_web_apps
   verbose: true
-  on:
-    all_branches: true
+  edge:
+    source: A92hm/dpl
+    branch: master

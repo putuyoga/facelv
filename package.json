@@ -3,7 +3,8 @@
   "version": "0.0.1",
   "description": "Face Lv",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "build": "webpack"
   },
   "author": "I Putu Yoga Permana",
   "license": "MIT",
@@ -25,5 +26,8 @@
   "devDependencies": {
     "css-loader": "^0.25.0",
     "style-loader": "^0.13.1"
+  },
+  "engines": {
+    "node": ">=4"
   }
 }

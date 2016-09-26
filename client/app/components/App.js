@@ -1,7 +1,7 @@
 import ReactDOM from 'react-dom';
 import React from 'react';
-import { Link, IndexLink } from 'react-router'
-const ACTIVE = { color: 'red' }
+import { Link, IndexLink } from 'react-router';
+const ACTIVE = { color: 'red' };
 
 class App extends React.Component {
   render() {

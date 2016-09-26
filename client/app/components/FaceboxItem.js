@@ -1,4 +1,5 @@
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
+import { Button } from 'react-bootstrap';
 import React from 'react';
 
 class FaceboxItem extends React.Component {
@@ -15,9 +16,7 @@ class FaceboxItem extends React.Component {
 
   componentDidMount() {
     var identifier = this.props.data._id + "__l";
-    // check if you have vote this one
-    if(localStorage.getItem(identifier))
-    {
+    if(localStorage.getItem(identifier)) {
       this.setState({alreadyVote: true});
     }
   }
@@ -72,8 +71,8 @@ class FaceboxItem extends React.Component {
     // all detail data component
     var sum = <h1 className="count">{data.count.yay - data.count.nay}</h1>;
     var name = <h4 className="name">{data.name}</h4>;
-    var yay = <button className="likeButton btn-sm" title="love this" onClick={this.loveClick}>❤</button>;
-    var nay = <button className="dislikeButton btn-md" title="dislike this" onClick={this.dislikeClick}>✖</button>;
+    var yay = <Button className="likeButton" title="love this" onClick={this.loveClick}>❤</Button>;
+    var nay = <Button className="dislikeButton" title="dislike this" onClick={this.dislikeClick}>✖</Button>;
     var detail;
     var button = <small>You have voted.</small>;
     if(!this.state.alreadyVote)
@@ -89,15 +88,15 @@ class FaceboxItem extends React.Component {
       backgroundImage: 'url('+ data.image +')',
       backgroundSize: 'cover',
       backgroundPosition: 'center'
-    }
+    };
 
     return (
         <div className="col-md-3 col-sm-4 col-xs-6 faceboxItemRoot">
           <div className="faceboxItem" style={imageStyle} onClick={this.clickBox}>
             <ReactCSSTransitionGroup 
-              transitionName="thing"
-              transitionEnterTimeout={500} 
-              transitionLeaveTimeout={300}>
+                transitionName="thing"
+                transitionEnterTimeout={500} 
+                transitionLeaveTimeout={300}>
               {detail}
             </ReactCSSTransitionGroup>
           </div>

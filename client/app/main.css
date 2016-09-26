@@ -88,7 +88,6 @@ html {
 .thing-enter {
     opacity: 0.01;
     transition: opacity 0.3s ease-in;
-    
 }
 
 .thing-enter.thing-enter-active {

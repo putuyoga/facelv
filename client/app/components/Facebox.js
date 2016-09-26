@@ -4,7 +4,7 @@ import React from 'react';
 // import component
 import FaceboxItem from './FaceboxItem';
 
-// our facebox React class
+/** Component facebox root container. */
 class Facebox extends React.Component {
 
   // initial state
@@ -33,10 +33,10 @@ class Facebox extends React.Component {
     var boxItems = [];
     var items = this.state.items;
     for(var i = 0; i < items.length; i++) {
-      boxItems.push(<FaceboxItem data={items[i]} key={items[i]._id} source={this.state.source}/>)
+      boxItems.push(<FaceboxItem data={items[i]} key={items[i]._id} source={this.state.source}/>);
     }
     //console.log(this.state.items.count);
-    return <div className="faceBox">{boxItems}</div>
+    return <div className="faceBox">{boxItems}</div>;
   }
 }
 

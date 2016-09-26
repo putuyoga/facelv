@@ -1,5 +1,5 @@
 # facelv
-Face voter based on MERN stack. My experiment on work hours.
+Face voter based on MERN stack. My experiment on CDC time.
 
 ![Imgur](http://i.imgur.com/veQMRDO.jpg)
 
@@ -13,7 +13,7 @@ Face voter based on MERN stack. My experiment on work hours.
 7. Webpack
 
 ## Run
-1. Do `npm install`
-2. Make sure MongoDB running with `mongod`
+1. Run `npm install` to install dependencies.
+2. Make sure your MongoDB running with `mongod`
 3. Bundle that javascript using `webpack -d --watch`
 4. Do `npm start` to run app

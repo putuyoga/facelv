@@ -9,6 +9,7 @@
   "author": "I Putu Yoga Permana",
   "license": "MIT",
   "dependencies": {
+    "babel-core": "*",
     "babel-loader": "^6.2.5",
     "babel-preset-es2015": "^6.14.0",
     "babel-preset-react": "^6.11.1",

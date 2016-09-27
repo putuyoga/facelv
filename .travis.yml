@@ -2,8 +2,10 @@ language: node_js
 node_js:
   - '5'
 before_script:
-  - sleep 15
-
+  - sleep 5
+before_deploy:
+  - ./scripts/before_deploy_1.sh
+# if you use azure to deploy
 deploy:
   provider: azure_web_apps
   verbose: true

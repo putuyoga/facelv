@@ -22,11 +22,9 @@
     "react-bootstrap": "^0.30.3",
     "react-dom": "^15.3.2",
     "react-router": "^2.8.1",
-    "webpack": "^1.13.2"
-  },
-  "devDependencies": {
     "css-loader": "^0.25.0",
-    "style-loader": "^0.13.1"
+    "style-loader": "^0.13.1",
+    "webpack": "^1.13.2"
   },
   "engines": {
     "node": ">=4"

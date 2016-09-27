@@ -12,5 +12,6 @@ deploy:
       source: A92hm/dpl
       branch: master
   - provider: heroku
+    app: facelv
     api_key:
       secure: g9iOe7EgTXecfB2tWPB+wbDM+EuazTCLYDouCy1UNXFueflG9/jvO6sw45A4Hn0GEIuHjuyJcGZtVAZnraf2OUW0rBo21jhhggCwj3kuwf3VnT0YO26dc7IjTfPjG9B24SOEPxi8As2NLaQ4xH/iKaF9wl29S/iNvHrHJn/zXOgE9C4C9xNc9Q2vuFNI55wMf6otTiR6t22nA5cF0o2yLSoQUrfq4U3UgenxMrBTYGU8Pd5mIXTyz8ZPrw591KIwybZY084Jktk427sc1NUwuEFtjwq/yrLD+jmy+uSd+VMd0xfX5spllXiLvo3vdbYAWNc5BIF8TKYQlDcW5jTj9keudXOlSlGb1bPkq/uV29EfmDin7mzrDsbD6c6rZgZ24RKKJHfFHjmExgBiPSESOstQvUeTOfzIU0ViPP3iLitjIYDRwuYR7r5rSXh+KzH47A4L1QCsGjZ68YL3Z9bkd1AyUY53dSfxFKgzIciLLyyZyGjFMROAnrYmPWoJv9y7f7q7CprngAG0/UgyBtPjd53k/FXeQukCbjLkYHBFdBItoLqdqBRnkOVuqWsRyHYenhut+p95Lg2rAmhvyNWxkj3Vp7St71SnfVcNPXKRy70JDKtVH389NKjhBfUguidAY2QWLDkO/KRbt3DwpQQH1b1bWCdt3ebYw0ZFVYI0krA=

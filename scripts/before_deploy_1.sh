@@ -13,4 +13,4 @@ git config --global user.name "I Putu Yoga Permana"
 
 # updated git
 git add .
-git commit
+git commit -a --allow-empty-message -m ''

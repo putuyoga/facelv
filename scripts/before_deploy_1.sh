@@ -7,6 +7,10 @@ npm build
 echo "Remove Last Line of .gitignore!"
 sed -i '$ d' .gitignore
 
-#updated git
+# updated git author
+git config --global user.email "putuyoga@gmail.com"
+git config --global user.name "I Putu Yoga Permana"
+
+# updated git
 git add .
 git commit

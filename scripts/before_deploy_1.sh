@@ -1,6 +1,11 @@
 # we need bundle our assets
 echo "Build Webpack!"
-npm build
+webpack -p --progress
+
+ls -R ./client | awk '
+/:$/&&f{s=$0;f=0}
+/:$/&&!f{sub(/:$/,"");s=$0;f=1;next}
+NF&&f{ print s"/"$0 }'
 
 # remove the last line of .gitignore
 # we need the `public` directory on deployment

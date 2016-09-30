@@ -1,6 +1,10 @@
 # we need bundle our assets
-echo "Build Webpack!"
-webpack -p --progress
+echo "Build client..."
+npm run build:client
+
+# wen need bundle our server too!
+echo "Build server..."
+echo run build:server
 
 # remove the last line of .gitignore
 # we need the `public` directory on deployment

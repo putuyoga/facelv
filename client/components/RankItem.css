@@ -1,0 +1,36 @@
+.avatar {
+    border-radius: 50%;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.rankItem td:first-child {
+    padding: 1.4rem;
+}
+.rankItem td {
+    padding: 0.6rem;
+    height: 100%;
+    float: none;
+}
+.textName, .textYay, .textNay, .textTotal {
+    padding: .2em .6em .3em;
+    line-height: 1;
+}
+.textYay, .textNay, .textTotal {
+    font-size: 75%;
+    font-weight: 700;
+    border-radius: .25em;
+    color: rgb(255, 255, 255);
+}
+
+.textYay {
+    background: rgb(41, 128, 185);
+}
+
+.textNay {
+    background: rgb(192, 57, 43);
+}
+
+.textTotal {
+    background: rgb(149, 165, 166);
+}

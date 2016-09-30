@@ -1,0 +1,17 @@
+html {
+    height: 100%;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    background: #bdc3c7;
+    display: block;
+    margin: 0;
+    height: 100%;
+}
+table {
+    text-align: left
+}
+thead th {
+    text-align: center;
+}

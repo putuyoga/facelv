@@ -1,0 +1,61 @@
+.faceboxItem {
+    width: 100%;
+    height: 12em;
+    margin-top: 1.2em;
+    margin-bottom: 1.2em;
+    cursor: pointer;
+}
+
+.faceboxItemContent {
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+    color: white;
+}
+
+.textCount {
+    font-weight: bold;
+    display: block;
+    font-size: 6rem;
+}
+
+.textName {
+    display: block;
+    font-size: 2rem;
+}
+
+.voteButton {
+    color: white;
+    border: 4px solid rgba(255,255,255,0.5);
+    border-radius: 50%;
+    background: transparent;
+    margin: 0.4em;
+    padding: .2em 1.2em;
+}
+
+.likeButton:hover {
+    background: #16a085;
+    color: white;
+    cursor: pointer;
+}
+
+.dislikeButton:hover {
+    background: #c0392b;
+    color: white;
+    cursor: pointer;
+}
+
+.itemEnter {
+    opacity: 0.01;
+    transition: opacity 0.3s ease-in;
+}
+.itemEnterActive {
+    opacity: 1;
+}
+.itemLeave {
+    opacity: 1;
+    transition: opacity 0.3s ease-in;
+}
+.itemLeaveActive {
+    opacity: 0.01;
+}

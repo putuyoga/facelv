@@ -57,7 +57,7 @@ export function deleteFace(req, res) {
     if (err) {
       res.status(500).json({message: err});
     }
-    res.json({message: 'delete successful'});
+    res.json({message: 'delete was successful'});
   });
 }
 

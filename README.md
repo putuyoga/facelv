@@ -1,10 +1,8 @@
 # facelv
+[![Build Status](https://travis-ci.org/putuyoga/facelv.svg?branch=master)](https://travis-ci.org/putuyoga/facelv)
 Face voter based on MERN stack. My experiment on CDC time.
 
 ![Imgur](http://i.imgur.com/veQMRDO.jpg)
-
-# Build
-[![Build Status](https://travis-ci.org/putuyoga/facelv.svg?branch=master)](https://travis-ci.org/putuyoga/facelv)
 
 ## Tools & Framework
 1. MongoDB: mongoose

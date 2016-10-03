@@ -1,25 +1,13 @@
-import ReactDOM from 'react-dom';
+/**
+ * Client entry point
+ */
 import React from 'react';
-import { Router, Route, IndexRoute, browserHistory } from 'react-router';
+import { render } from 'react-dom';
+import App from './App';
+import { configureStore } from './store';
 
-// import component
-import App from './components/App';
-import Facebox from './components/Facebox';
-import Rank from './components/Rank';
-import NotFound from './components/NotFound';
+// Initialize store
+const store = configureStore(window.__INITIAL_STATE__);
+const mountApp = document.getElementById('content');
 
-// Base stylesheet
-require('./main.css');
-
-// Declarative route configuration (could also load this config lazily
-// instead, all you really need is a single root route, you don't need to
-// colocate the entire config).
-ReactDOM.render((
-  <Router history={browserHistory}>
-    <Route path="/" component={App}>
-      <IndexRoute component={Facebox} />
-      <Route path="rank" component={Rank} />
-      <Route path="*" component={NotFound}/>
-    </Route>
-  </Router>
-), document.getElementById('content'))
+render(<App store={store} />, mountApp);

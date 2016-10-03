@@ -1,0 +1,21 @@
+.header {
+    font-family: 'Playfair Display', serif;
+    border: 0;
+}
+
+.content {
+    background: #fff;
+    max-width: 860px;
+    margin: 0 auto;
+    position: relative;
+    height: 100%;
+    overflow: auto;
+    padding: 2em;
+}
+
+@media screen and (max-width: 550px) {
+    .content {
+        max-width: auto;
+        padding: 1.2em;
+    }
+}

@@ -1,0 +1,25 @@
+
+.navbarList {
+    list-style: none;
+    margin: 2em;
+}
+
+.navbarItem {
+    display: inline-block;
+    margin: 1em;
+    margin-bottom: 0;
+}
+
+.textMenu {
+    font-weight: bold;
+    color: #ccc;
+    text-decoration: none;
+}
+
+.textMenu:hover {
+    color: #2980B9;
+}
+
+.textMenuActive {
+    color: #000;
+}

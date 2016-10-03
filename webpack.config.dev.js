@@ -6,7 +6,7 @@ var APP_DIR = path.resolve(__dirname, 'client');
 var config = {
   entry: {
     app: [APP_DIR + '/index.js'],
-    vendor: ['react', 'react-dom', 'react-router', 'react-addons-css-transition-group']
+    vendor: ['react', 'react-redux', 'redux', 'react-dom', 'react-router', 'react-addons-css-transition-group']
   },
   output: {
     path: DIST_DIR,

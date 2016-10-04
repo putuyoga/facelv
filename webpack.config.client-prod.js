@@ -16,11 +16,20 @@ module.exports = {
 
   entry: {
     app: [APP_DIR + '/index.js'],
-    vendor: ['react', 'react-redux', 'redux', 'redux-thunk', 'react-dom', 'react-router', 'react-addons-css-transition-group']
+    vendor: [
+      'isomorphic-fetch',
+      'react',
+      'react-redux',
+      'redux',
+      'redux-thunk',
+      'react-dom',
+      'react-router',
+      'react-addons-css-transition-group'
+      ]
   },
 
   output: {
-    path: DIST_DIR,
+    path: DIST_DIR + '/',
     filename: '[name].[chunkhash].js',
     publicPath: '/'
   },

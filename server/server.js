@@ -48,6 +48,12 @@ const htmlPage = () => {
       </head>
       <body>
         <div id="content"></div>
+        <script>
+          ${process.env.NODE_ENV === 'production' ?
+          `//<![CDATA[
+          window.webpackManifest = ${JSON.stringify(chunkManifest)};
+          //]]>` : ''}
+        </script>
         <script src='${process.env.NODE_ENV === 'production' ? assetsManifest['/vendor.js'] : '/vendor.js'}'></script>
         <script src='${process.env.NODE_ENV === 'production' ? assetsManifest['/app.js'] : '/app.js'}'></script>
       </body>

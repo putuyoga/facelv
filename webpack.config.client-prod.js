@@ -30,7 +30,8 @@ module.exports = {
 
   output: {
     path: DIST_DIR + '/',
-    filename: '[name].[chunkhash].js',
+    filename: '[name].[hash].js',
+    chunkFilename: "[id].[chunkhash].js",
     publicPath: '/'
   },
 
@@ -52,12 +53,6 @@ module.exports = {
         test: /\.jsx*$/,
         exclude: /node_modules/,
         loader: 'babel'
-      }, {
-        test: /\.(jpe?g|gif|png|svg)$/i,
-        loader: 'url-loader?limit=10000'
-      }, {
-        test: /\.json$/,
-        loader: 'json-loader'
       }
     ]
   },

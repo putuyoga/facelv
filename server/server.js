@@ -2,11 +2,13 @@ import Express from 'express';
 import mongoose from 'mongoose';
 import bodyParser from 'body-parser';
 import path from 'path';
-
+import passport from 'passport';
 // required module
 import faces from './routes/face.routes';
+import auth from './routes/auth.routes';
 import sampleData from './sampleData';
 import serverConfig from './config';
+import authConfig from './auth';
 
 // Set native promises as mongoose promise
 mongoose.Promise = global.Promise;
@@ -17,9 +19,6 @@ mongoose.connect(serverConfig.mongoURL, (error) => {
     console.error('error when trying connect to MongoDB');
     throw error;
   }
-
-  // feed some sample data in DB.
-  sampleData();
 });
 
 // instantiate 
@@ -28,8 +27,12 @@ const app = Express();
 // general configuration
 app.use(Express.static(path.resolve(__dirname, '../dist')));
 app.use(bodyParser.urlencoded({ extended: true }));
+
 app.use(bodyParser.json());
+app.use(passport.initialize());
 app.use('/api', faces);
+app.use('/api', auth);
+authConfig(passport);
 
 // main page render function
 const htmlPage = () => {
@@ -71,3 +74,5 @@ app.all('/*', function(req, res) {
 // start server
 app.listen(serverConfig.port);
 console.log('Start at: ' + serverConfig.port);
+
+export default app;

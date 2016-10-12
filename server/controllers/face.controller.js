@@ -11,7 +11,7 @@ export function getFaces(req, res) {
 
 export function getFace(req, res) {
   var faceId = req.params.faceId;
-  Face.find({ _id: faceId }).exec((err, face) => {
+  Face.findOne({ _id: faceId }).exec((err, face) => {
     if (err) {
       res.status(500).send(err);
     }
@@ -100,7 +100,7 @@ export function bestFace(req, res) {
     {
       "$limit": parseInt( req.params.limit )
     }
-];
+  ];
   Face.aggregate(pipeline, function(err, face) {
     if (err) {
       res.status(500).json(err);
